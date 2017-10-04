@@ -1,0 +1,10 @@
+server:
+  port: 8094
+
+info:
+  component: Composite Service
+  
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2

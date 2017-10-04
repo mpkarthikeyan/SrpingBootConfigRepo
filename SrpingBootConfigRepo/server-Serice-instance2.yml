@@ -1,0 +1,27 @@
+server:
+  port: 8092
+ 
+#data source properties
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/product
+    username: sa
+# password: 
+    dataSourceClassName: org.h2.jdbcx.JdbcDataSource
+    schema: classpath:/sql/schema.sql
+    data: classpath:/sql/data.sql
+
+# JPA properties
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: H2
+    openInView: false
+    show_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none       
+info:
+  component: Product Service  
+
+ 
+
